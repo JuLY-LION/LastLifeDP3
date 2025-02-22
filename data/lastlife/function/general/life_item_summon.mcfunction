@@ -8,9 +8,10 @@ tellraw @s[scores={lives=..2}] ["",{"text":"You are too weak to create a ","colo
 
 # Successfully created the item
 
-damage @s[scores={lives=3..}] 2 minecraft:bad_respawn_point
+damage @s[scores={lives=3..}] 2 minecraft:cramming
 execute at @s[scores={lives=3..}] run particle glow ~ ~1 ~ 1 1 1 0.01 40 normal @a
 execute at @s[scores={lives=3..}] run playsound minecraft:entity.guardian.death player @a ~ ~ ~ 1 0.5
+effect give @s[scores={lives=3..}] slowness 7 4
 
 execute as @s[scores={lives=3..}] at @s anchored eyes positioned ^ ^ ^3 run summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{"text":"Soul Contract","color":"light_purple","italic":false}',Item:{id:"minecraft:mojang_banner_pattern",Count:1b,tag:{display:{Name:'{"text":"Soul Contract","italic":false}'},Enchantments:[{}]}}}
 execute as @s[scores={lives=3..}] at @s anchored eyes positioned ^ ^ ^3 run particle minecraft:end_rod ~ ~ ~ 0.05 0.05 0.05 0.05 20
