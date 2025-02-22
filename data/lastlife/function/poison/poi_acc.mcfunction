@@ -1,0 +1,5 @@
+tellraw @s [{"text":""},{"text":"Air quality in this region: ","color":"white"},{"text":"Acceptable","bold":true,"color":"dark_green"},{"text":"\n"},{"text":"Poison level is "},{"text":"-1HP","color":"light_purple"},{"text":"/minute"},{"text":"\n"},{"text":"Expect minimal side effects","underlined":true,"color":"gray","hoverEvent":{"action":"show_text","contents":[{"text":"When Applied:","color":"dark_purple"},{"text":"\n"},{"text":"+0% Max Health","color":"gray"},{"text":"\n"},{"text":"-5% Movement Speed","color":"red"},{"text":"\n"},{"text":"-0.5 Attack Damage","color":"red"},{"text":"\n"},{"text":"+0 Attack Speed","color":"gray"}]}}]
+
+attribute @s[scores={poisonAmpPrev=2..}] minecraft:generic.max_health base set 16
+
+execute as @a[nbt={Inventory:[{Slot:103b}]}] run function lastlife:poison/is_wearing

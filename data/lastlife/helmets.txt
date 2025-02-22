@@ -1,0 +1,5 @@
+If you want to re-enable helmet recipes, do this:
+1. Navigate to the /data/lastlife/recipes folder.
+2. Change the ciron_helmet file from .txt to .json (ensure file name extensions are shown in File Explorer's "View" tab)
+3. Navigate to the /data/minecraft/recipes folder.
+4. Delete all files that have the word "helmet" in its name from this folder.

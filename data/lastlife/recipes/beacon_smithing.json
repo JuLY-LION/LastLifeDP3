@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:nether_star"
+  },
+  "addition": {
+    "item": "minecraft:glass"
+  },
+  "result": {
+    "item": "minecraft:beacon"
+  }
+}

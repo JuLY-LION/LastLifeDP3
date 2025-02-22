@@ -1,0 +1,30 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "Compressed",
+        "color": "gray",
+        "bold": true,
+        "italic": false,
+        "extra": [
+          {
+            "text": " - ",
+            "color": "gray",
+            "bold": false,
+            "italic": false,
+            "extra": [
+              {
+                "text": "Scarred",
+                "color": "red",
+                "bold": false,
+                "italic": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "replace": true
+  }
+]

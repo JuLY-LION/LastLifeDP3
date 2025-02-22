@@ -1,0 +1,3 @@
+tellraw @s [{"text":""},{"text":"Air quality in this region: ","color":"white"},{"text":"Moderate","bold":true,"color":"yellow"},{"text":"\n"},{"text":"Poison level is "},{"text":"-4HP","color":"red"},{"text":"/minute"},{"text":"\n"},{"text":"Expect additional side effects","underlined":true,"color":"gold","hoverEvent":{"action":"show_text","contents":[{"text":"When Applied:","color":"dark_purple"},{"text":"\n"},{"text":"Hunger I","color":"red"},{"text":"\n"},{"text":"-10% Max Health","color":"red"},{"text":"\n"},{"text":"-10% Movement Speed","color":"red"},{"text":"\n"},{"text":"-1 Attack Damage","color":"red"},{"text":"\n"},{"text":"-0.1 Attack Speed","color":"red"}]}}]
+
+execute as @a[nbt={Inventory:[{Slot:103b}]}] run function lastlife:poison/is_wearing

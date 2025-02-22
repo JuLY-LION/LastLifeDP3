@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "minecraft:obsidian"
+    },
+    "addition": {
+        "item": "minecraft:nether_star"
+    },
+    "result": {
+        "item": "minecraft:enchanting_table"
+    }
+}

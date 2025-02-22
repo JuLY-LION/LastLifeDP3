@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "LRL",
+        "LLL",
+        "LCL"
+    ],
+    "key": {
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "C": {
+            "item": "minecraft:lead"
+        },
+        "R": {
+            "item": "minecraft:rabbit_hide"
+        }
+    },
+    "result": {
+        "item": "minecraft:saddle",
+        "count": 1
+    }
+}
