@@ -1,7 +1,7 @@
 # comment
 
-function lastlife:bc/countdown
-execute unless score addMinutes variable matches 0 run function lastlife:bc/time_offset
+function lastlife:timer/countdown
+execute unless score addMinutes variable matches 0 run function lastlife:timer/time_offset
 
 execute if score minutesLeft variable matches 60 if score ticksLeft variable matches 0 run tellraw @a {"text":"1 hour remaining","color":"yellow"}
 execute if score minutesLeft variable matches 60 if score ticksLeft variable matches 0 as @a at @s run playsound minecraft:block.note_block.chime block @s ~ ~ ~ 1 2

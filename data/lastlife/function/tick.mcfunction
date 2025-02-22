@@ -25,6 +25,8 @@ execute as @a[scores={admin=1..}] run function lastlife:trigger/admin_panel
 execute as @a[scores={survival=1..}] run function lastlife:trigger/survival_mode
 execute as @a[scores={recipes=1..}] run function lastlife:trigger/knowledge
 
+execute if score activeSession variable matches 1 run function lastlife:timer/do_time
+
 function lastlife:mobs/creepers
 execute at JuLYLION run particle minecraft:end_rod ~ ~ ~ 0 0 0 0.01 1 normal @a
 effect give @a[scores={poisonAmp=1..}] poison 1 0 true

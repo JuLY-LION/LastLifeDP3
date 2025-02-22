@@ -1,5 +1,7 @@
 # For when sessions end
 
+execute if score minutesLeft variable matches 1.. run title @a actionbar [{"text":"An admin has ended the session early","color":"yellow"}]
+
 scoreboard players set activeSession variable 0
 scoreboard players enable @a survival
 
