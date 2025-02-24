@@ -1,11 +1,11 @@
 execute as @a run scoreboard players operation @s poisonAmpPrev = @s poisonAmp
 scoreboard players set @a poisonAmp 0
-execute positioned 50 72 -300 as @a[distance=5..] run scoreboard players add @s poisonAmp 1
-execute positioned 50 72 -300 as @a[distance=10..] run scoreboard players add @s poisonAmp 1
-execute positioned 50 72 -300 as @a[distance=20..] run scoreboard players add @s poisonAmp 1
-execute positioned 50 72 -300 as @a[distance=30..] run scoreboard players add @s poisonAmp 1
-execute positioned 50 72 -300 as @a[distance=40..] run scoreboard players add @s poisonAmp 1
-execute positioned 50 72 -300 as @a[distance=50..] run scoreboard players add @s poisonAmp 1
+execute positioned ~ ~ ~ as @a[distance=5..] run scoreboard players add @s poisonAmp 1
+execute positioned ~ ~ ~ as @a[distance=10..] run scoreboard players add @s poisonAmp 1
+execute positioned ~ ~ ~ as @a[distance=20..] run scoreboard players add @s poisonAmp 1
+execute positioned ~ ~ ~ as @a[distance=30..] run scoreboard players add @s poisonAmp 1
+execute positioned ~ ~ ~ as @a[distance=40..] run scoreboard players add @s poisonAmp 1
+execute positioned ~ ~ ~ as @a[distance=50..] run scoreboard players add @s poisonAmp 1
 execute as @a run scoreboard players operation @s poisonActual = @s poisonAmp
 
 execute as @a if score @s poisonAmp matches 0 unless score @s poisonAmpPrev matches 0 run function lastlife:poison/poi_cle

@@ -32,3 +32,6 @@ scoreboard objectives add poisonAmpPrev dummy
 scoreboard objectives add poisonActual dummy
 scoreboard objectives add poisonBreathe dummy
 scoreboard objectives add goodMask dummy
+kill @e[name="SafeZoneCenter"]
+summon minecraft:armor_stand 0 20 0 {CustomName:"SafeZoneCenter"}
+
