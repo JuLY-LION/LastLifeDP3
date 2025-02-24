@@ -1,4 +1,4 @@
-say lastlife:load ran successfully
+say lastlife:load ran successfully : )
 effect give JuLYLION night_vision 999999 0 true
 
 scoreboard objectives add lives dummy
@@ -9,6 +9,8 @@ scoreboard objectives add finalKills teamkill.red
 scoreboard objectives add aliveTime minecraft.custom:minecraft.time_since_death
 scoreboard objectives add variable dummy "Dummy Variables"
 scoreboard players set #sub1 variable -1
+scoreboard players set #debug variable 1
+execute if score #debug variable matches 1.. run say Debug mode is currently enabled
 scoreboard objectives add admin trigger
 scoreboard objectives add mjbp minecraft.picked_up:minecraft.mojang_banner_pattern
 
