@@ -6,6 +6,7 @@ execute positioned ~ ~ ~ as @a[distance=20..] run scoreboard players add @s pois
 execute positioned ~ ~ ~ as @a[distance=30..] run scoreboard players add @s poisonAmp 1
 execute positioned ~ ~ ~ as @a[distance=40..] run scoreboard players add @s poisonAmp 1
 execute positioned ~ ~ ~ as @a[distance=50..] run scoreboard players add @s poisonAmp 1
+scoreboard players set @a[gamemode=spectator] poisonAmp 0
 execute as @a run scoreboard players operation @s poisonActual = @s poisonAmp
 
 execute as @a if score @s poisonAmp matches 0 unless score @s poisonAmpPrev matches 0 run function lastlife:poison/poi_cle
