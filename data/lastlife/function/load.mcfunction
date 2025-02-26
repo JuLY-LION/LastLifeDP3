@@ -34,4 +34,6 @@ scoreboard objectives add poisonBreathe dummy
 scoreboard objectives add goodMask dummy
 kill @e[name="SafeZoneCenter"]
 summon minecraft:armor_stand 0 20 0 {CustomName:"SafeZoneCenter"}
+kill @e[name="EnchantArea"]
+summon minecraft:armor_stand 40 20 40 {CustomName:"EnchantArea"}
 
