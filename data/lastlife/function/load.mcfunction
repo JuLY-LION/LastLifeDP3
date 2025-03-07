@@ -33,7 +33,7 @@ scoreboard objectives add poisonActual dummy
 scoreboard objectives add poisonBreathe dummy
 scoreboard objectives add goodMask dummy
 kill @e[name="SafeZoneCenter"]
-summon minecraft:armor_stand 0 20 0 {CustomName:"SafeZoneCenter"}
+summon marker 50.5 72.0 50.5 {NoGravity:1b,CustomNameVisible:1b,CustomName:'"SafeZoneCenter"'}
 kill @e[name="EnchantArea"]
-summon minecraft:armor_stand 40 20 40 {CustomName:"EnchantArea"}
+summon marker 0.5 72.0 0.5 {NoGravity:1b,CustomNameVisible:1b,CustomName:'"EnchantArea"'}
 
