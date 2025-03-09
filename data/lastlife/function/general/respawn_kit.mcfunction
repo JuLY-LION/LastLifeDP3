@@ -15,3 +15,5 @@ effect give @s saturation 20 0 true
 effect give @s regeneration 5 1
 effect give @s absorption 20
 effect give @s fire_resistance 20
+
+scoreboard players set @s poisonBreathe -30
