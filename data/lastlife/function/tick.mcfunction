@@ -11,7 +11,7 @@ team join yellowName @a[scores={hasDied=1..,lives=2}]
 team join redName @a[scores={hasDied=1..,lives=1}]
 execute at @a[scores={hasDied=1..,lives=0}] run function lastlife:general/final_kill
 execute as @a[scores={hasDied=1..,lives=1}] at @a[gamemode=survival] run playsound minecraft:entity.guardian.hurt player @p ~ ~20 ~ 0.5 0.5 0.5
-# execute at @a[scores={hasDied=1..}] run function lastlife:general/protect_items_spawn
+execute at @a[scores={hasDied=1..}] run function lastlife:general/protect_items_spawn
 
 scoreboard players set @a[scores={hasDied=1..}] hasDied 0
 
@@ -26,6 +26,7 @@ execute as @a[scores={survival=1..}] run function lastlife:trigger/survival_mode
 execute as @a[scores={recipes=1..}] run function lastlife:trigger/knowledge
 
 execute if score activeSession variable matches 1 run function lastlife:timer/do_time
+execute as @e[tag=protectitems] at @s run function lastlife:general/protect_items
 execute as @e[name=EnchantArea,limit=1,sort=nearest] at @s run function lastlife:general/enchant_area
 
 
