@@ -9,11 +9,17 @@ scoreboard objectives add finalKills teamkill.red
 scoreboard objectives add aliveTime minecraft.custom:minecraft.time_since_death
 scoreboard objectives add protItemAge dummy
 scoreboard objectives add variable dummy "Dummy Variables"
+scoreboard objectives add mjbp minecraft.picked_up:minecraft.mojang_banner_pattern
+
+scoreboard objectives add give_life trigger
+scoreboard objectives add admin trigger
+scoreboard objectives add refresh trigger
+scoreboard players enable @a refresh
+scoreboard players enable @a give_life
+
 scoreboard players set #sub1 variable -1
 scoreboard players set #debug variable 1
 execute if score #debug variable matches 1.. run say Debug mode is currently enabled
-scoreboard objectives add admin trigger
-scoreboard objectives add mjbp minecraft.picked_up:minecraft.mojang_banner_pattern
 
 team add darkGreenName
 team modify darkGreenName color dark_green
