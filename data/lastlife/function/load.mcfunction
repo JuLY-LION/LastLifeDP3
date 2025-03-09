@@ -7,6 +7,7 @@ scoreboard objectives add deaths deathCount
 scoreboard objectives add kills playerKillCount
 scoreboard objectives add finalKills teamkill.red
 scoreboard objectives add aliveTime minecraft.custom:minecraft.time_since_death
+scoreboard objectives add protItemAge dummy
 scoreboard objectives add variable dummy "Dummy Variables"
 scoreboard players set #sub1 variable -1
 scoreboard players set #debug variable 1
