@@ -3,6 +3,8 @@
 scoreboard players set minutesLeft variable 120
 scoreboard players set activeSession variable 1
 scoreboard players enable @a survival
+gamerule doMobSpawning true
+schedule clear lastlife:timer/disable_mob_spawning
 
 execute as @a[team=darkGreenName] run tellraw @s ["",{"text":"Session start! ","bold":true,"color":"green"},{"text":"Watch your back! You have ","color":"yellow"},{"score":{"name":"@s","objective":"lives"},"bold":true,"color":"dark_green"},{"text":" lives","bold":true,"color":"dark_green"},{"text":" remaining.","color":"yellow"}]
 execute as @a[team=greenName] run tellraw @s ["",{"text":"Session start! ","bold":true,"color":"green"},{"text":"Watch your back! You have ","color":"yellow"},{"score":{"name":"@s","objective":"lives"},"bold":true,"color":"green"},{"text":" lives","bold":true,"color":"green"},{"text":" remaining.","color":"yellow"}]
