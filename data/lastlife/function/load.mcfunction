@@ -1,5 +1,5 @@
 say lastlife:load ran successfully : )
-effect give JuLYLION night_vision 999999 0 true
+# effect give JuLYLION night_vision 999999 0 true
 
 scoreboard objectives add lives dummy
 scoreboard objectives add hasDied deathCount
@@ -18,7 +18,7 @@ scoreboard players enable @a refresh
 scoreboard players enable @a give_life
 
 scoreboard players set #sub1 variable -1
-scoreboard players set #debug variable 1
+scoreboard players set #debug variable 0
 execute if score #debug variable matches 1.. run say Debug mode is currently enabled
 
 team add darkGreenName
@@ -39,6 +39,8 @@ scoreboard objectives add poisonAmpPrev dummy
 scoreboard objectives add poisonActual dummy
 scoreboard objectives add poisonBreathe dummy
 scoreboard objectives add goodMask dummy
+scoreboard objectives add punishmentID dummy
+
 kill @e[name="SafeZoneCenter"]
 summon marker 50.5 72.0 50.5 {NoGravity:1b,CustomNameVisible:1b,CustomName:'"SafeZoneCenter"'}
 kill @e[name="EnchantArea"]
