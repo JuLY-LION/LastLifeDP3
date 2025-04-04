@@ -1,0 +1,26 @@
+{
+  "function": "minecraft:set_attributes",
+  "modifiers": [
+    {
+      "attribute": "minecraft:armor",
+      "id": "thearmor",
+      "amount": 5,
+      "operation": "add_value",
+      "slot": "chest"
+    },
+    {
+      "attribute": "minecraft:armor_toughness",
+      "id": "thetoughness",
+      "amount": 2,
+      "operation": "add_value",
+      "slot": "chest"
+    },
+    {
+      "attribute": "minecraft:knockback_resistance",
+      "id": "thekbresist",
+      "amount": 0.1,
+      "operation": "add_value",
+      "slot": "chest"
+    }
+  ]
+}
