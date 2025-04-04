@@ -1,0 +1,13 @@
+{
+  "function": "minecraft:set_lore",
+  "lore": [
+    {
+      "text": "Compressed",
+      "color": "gray",
+      "bold": true,
+      "italic": false
+    }
+  ],
+  "mode": "replace_all",
+  "conditions": []
+}
