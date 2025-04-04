@@ -1,0 +1,22 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "a",
+        "color": "red",
+        "extra": [
+          {
+            "text": "zero",
+            "color": "yellow"
+          }
+        ]
+      },
+      {
+        "text": "b",
+        "color": "green"
+      }
+    ],
+    "replace": true
+  }
+]
