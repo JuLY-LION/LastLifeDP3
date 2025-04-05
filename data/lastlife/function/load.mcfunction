@@ -40,6 +40,10 @@ scoreboard objectives add poisonActual dummy
 scoreboard objectives add poisonBreathe dummy
 scoreboard objectives add goodMask dummy
 scoreboard objectives add punishmentID dummy
+scoreboard objectives add wearingChainHelmet dummy
+scoreboard objectives add wearingChainChestP dummy
+scoreboard objectives add wearingChainLeggings dummy
+scoreboard objectives add wearingChainBoots dummy
 
 kill @e[name="SafeZoneCenter"]
 summon marker 50.5 72.0 50.5 {NoGravity:1b,CustomNameVisible:1b,CustomName:'"SafeZoneCenter"'}
