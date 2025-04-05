@@ -3,24 +3,24 @@
   "modifiers": [
     {
       "attribute": "minecraft:armor",
-      "id": "thearmor",
+      "id": "thearmor101",
       "amount": 5,
       "operation": "add_value",
-      "slot": "chest"
+      "slot": "legs"
     },
     {
       "attribute": "minecraft:armor_toughness",
-      "id": "thetoughness",
+      "id": "thetoughness101",
       "amount": 2,
       "operation": "add_value",
-      "slot": "chest"
+      "slot": "legs"
     },
     {
       "attribute": "minecraft:knockback_resistance",
-      "id": "thekbresist",
+      "id": "thekbresist101",
       "amount": 0.1,
       "operation": "add_value",
-      "slot": "chest"
+      "slot": "legs"
     }
   ]
 }
