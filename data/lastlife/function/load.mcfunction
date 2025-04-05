@@ -47,8 +47,8 @@ scoreboard objectives add wearingChainBoots dummy
 
 kill @e[name="SafeZoneCenter"]
 summon marker 50.5 72.0 50.5 {NoGravity:1b,CustomNameVisible:1b,CustomName:'"SafeZoneCenter"'}
-execute in minecraft:the_nether run kill @e[name="SafeZoneCenter"]
-execute in minecraft:the_nether run summon marker 50.5 64.0 50.5 {NoGravity:1b,CustomNameVisible:1b,CustomName:'"SafeZoneCenter"'}
+execute in minecraft:the_nether run summon marker 25.5 64.0 25.5 {NoGravity:1b,CustomNameVisible:1b,CustomName:'"SafeZoneCenter"'}
+# execute in minecraft:the_nether run summon marker 75.5 64.0 75.5 {NoGravity:1b,CustomNameVisible:1b,CustomName:'"SafeZoneCenter"'}
 kill @e[name="EnchantArea"]
 summon marker 0.5 72.0 0.5 {NoGravity:1b,CustomNameVisible:1b,CustomName:'"EnchantArea"'}
 
