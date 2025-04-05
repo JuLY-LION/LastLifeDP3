@@ -38,3 +38,5 @@ execute as @a[scores={poisonBreathe=-1}] run function lastlife:poison/punish/lvl
 execute as @a[scores={poisonAmp=1..}] at @s anchored eyes run particle minecraft:falling_dust{block_state:{Name:"green_concrete"}} ^ ^ ^3 8 8 8 0 10 normal @s
 execute as @a[scores={poisonAmp=3..}] at @s anchored eyes run particle minecraft:falling_dust{block_state:{Name:"green_concrete"}} ^ ^ ^3 8 8 8 0 10 normal @s
 execute as @a[scores={poisonAmp=5..}] at @s anchored eyes run particle minecraft:falling_dust{block_state:{Name:"green_concrete"}} ^ ^ ^3 8 8 8 0 10 normal @s
+
+function compressediron:hub_ciron
