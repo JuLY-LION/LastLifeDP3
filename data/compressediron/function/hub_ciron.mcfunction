@@ -14,5 +14,5 @@ scoreboard players add @a[nbt={Inventory:[{id:"minecraft:chainmail_helmet",Slot:
 
 execute as @a[scores={wearingChainChestP=1}] run function compressediron:execute/do_chestplate
 execute as @a[scores={wearingChainLeggings=1}] run function compressediron:execute/do_leggings
-execute as @a[scores={wearingChainLeggings=1}] run function compressediron:execute/do_boots
-execute as @a[scores={wearingChainLeggings=1}] run function compressediron:execute/do_helmet
+execute as @a[scores={wearingChainBoots=1}] run function compressediron:execute/do_boots
+execute as @a[scores={wearingChainHelmet=1}] run function compressediron:execute/do_helmet
