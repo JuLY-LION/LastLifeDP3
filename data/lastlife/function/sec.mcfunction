@@ -11,18 +11,5 @@ execute as @a[scores={poisonBreathe=61..}] run function lastlife:poison/punish/g
 
 execute if score activeSession variable matches 0 if score minutesLeft variable matches 0 run effect give @a[scores={lives=1..},gamemode=survival] minecraft:mining_fatigue 2 0 true
 
-effect give @a[scores={punishmentID=2}] mining_fatigue 11
-effect give @a[scores={punishmentID=3,health=6}] instant_damage
-effect give @a[scores={punishmentID=3,health=20}] instant_damage
-effect give @a[scores={punishmentID=4}] nausea 11
-execute as @a[scores={punishmentID=5}] at @s if entity @p[distance=1..4] run effect give @s blindness 3
-effect give @a[scores={punishmentID=6}] hunger 2 2
-effect give @a[scores={punishmentID=7}] weakness 11
-effect give @a[scores={punishmentID=11}] unluck 11 3
-effect give @a[scores={punishmentID=11}] glowing 11
-effect give @a[scores={punishmentID=11},x=-1000000,y=0,z=-1000000,dx=2000000,dy=32,dz=2000000] bad_omen 6000 0 true
-execute as @a[scores={punishmentID=12}] at @s unless entity @p[distance=1..16] run effect give @s darkness 3
-effect give @a[scores={punishmentID=13}] wind_charged 2 0 true
-effect give @a[scores={punishmentID=13}] weaving 2 0 true
-effect give @a[scores={punishmentID=13}] oozing 2 0 true
-effect give @a[scores={punishmentID=13}] infested 2
+execute if entity @a[scores={punishmentID=1..7}] run function lastlife:punish/section_one
+execute if entity @a[scores={punishmentID=9..13}] run function lastlife:punish/section_two
