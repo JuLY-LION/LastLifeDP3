@@ -31,7 +31,7 @@ execute as @e[name=EnchantArea,limit=1,sort=nearest] at @s run function lastlife
 
 
 function lastlife:mobs/creepers
-execute at JuLYLION run particle minecraft:end_rod ~ ~ ~ 0 0 0 0.01 1 normal @a
+# execute at JuLYLION run particle minecraft:end_rod ~ ~ ~ 0 0 0 0.01 1 normal @a
 effect give @a[scores={poisonAmp=1..}] poison 1 0 true
 execute as @a[scores={poisonBreathe=-1}] run function lastlife:poison/punish/lvlzero
 
