@@ -1,5 +1,8 @@
 # Second section of the punishments available
 
+execute as @a[scores={punishmentID=9}] at @s if block ~ ~-0.125 ~ minecraft:netherrack run effect give @s wither 1 1
+execute as @a[scores={punishmentID=9}] at @s if block ~ ~-0.125 ~ minecraft:soul_sand run effect give @s wither 1 1
+execute as @a[scores={punishmentID=9}] at @s if block ~ ~-0.125 ~ minecraft:soul_soil run effect give @s wither 1 1
 # ID 10 is needed in tick.mcfunction
 effect give @a[scores={punishmentID=11}] unluck 11 3
 effect give @a[scores={punishmentID=11}] glowing 11
