@@ -19,7 +19,7 @@ execute as @a[scores={refresh=1..}] run function lastlife:general/refresh_colors
 execute as @a[scores={give_life=1..}] run function lastlife:general/life_item_summon
 execute as @a[scores={mjbp=1..}] run function lastlife:general/life_item_use
 # execute as @a[nbt={Inventory:[{id:"minecraft:blaze_powder",Count:1b,Slot:-106b}]}] run function lastlife:bc/oh_blaze_powder
-execute as @a[scores={lives=1..3,aliveTime=10}] run function lastlife:general/respawn_kit
+execute as @a[scores={lives=1..4,aliveTime=10}] run function lastlife:general/respawn_kit
 execute at @e[tag=safeitem,limit=1,sort=random] run particle composter ~ ~0.6 ~ 0.1 0.1 0.1 0 1 normal @a
 execute as @a[scores={admin=1..}] run function lastlife:trigger/admin_panel
 execute as @a[scores={survival=1..}] run function lastlife:trigger/survival_mode
