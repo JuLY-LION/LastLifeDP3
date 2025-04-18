@@ -10,7 +10,6 @@ effect give @a fire_resistance 3 3 true
 effect give @a water_breathing 3 3 true
 effect give @a weakness 3 3 true
 effect give @a saturation 20 0 true
-effect give @a mining_fatigue infinite 0 true
 
 execute as @a[gamemode=!spectator] run playsound minecraft:block.beacon.ambient block @p ~ ~20 ~ 0.5 2 0.5
 execute as @a[gamemode=!spectator] run scoreboard players add still_alive lives 1
