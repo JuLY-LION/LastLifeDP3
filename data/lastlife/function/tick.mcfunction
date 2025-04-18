@@ -12,6 +12,7 @@ team join redName @a[scores={hasDied=1..,lives=1}]
 execute at @a[scores={hasDied=1..,lives=0}] run function lastlife:general/final_kill
 execute as @a[scores={hasDied=1..,lives=1}] at @a[gamemode=survival] run playsound minecraft:entity.guardian.hurt player @p ~ ~20 ~ 0.5 0.5 0.5
 execute at @a[scores={hasDied=1..}] run function lastlife:general/protect_items_spawn
+scoreboard players set @a[scores={hasDied=1..}] punishmentID 0
 
 scoreboard players set @a[scores={hasDied=1..}] hasDied 0
 
