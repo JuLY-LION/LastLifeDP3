@@ -1,11 +1,14 @@
+# I need to come up with a better file name for this function than "filename" -_-
+# Hub function for poison-border related commands
+
 execute as @a run scoreboard players operation @s poisonAmpPrev = @s poisonAmp
 scoreboard players set @a poisonAmp 0
-execute positioned ~ ~ ~ as @a[distance=5..] run scoreboard players add @s poisonAmp 1
-execute positioned ~ ~ ~ as @a[distance=10..] run scoreboard players add @s poisonAmp 1
-execute positioned ~ ~ ~ as @a[distance=20..] run scoreboard players add @s poisonAmp 1
-execute positioned ~ ~ ~ as @a[distance=30..] run scoreboard players add @s poisonAmp 1
-execute positioned ~ ~ ~ as @a[distance=40..] run scoreboard players add @s poisonAmp 1
-execute positioned ~ ~ ~ as @a[distance=50..] run scoreboard players add @s poisonAmp 1
+execute positioned ~ ~ ~ as @a[distance=56..] run scoreboard players add @s poisonAmp 1
+execute positioned ~ ~ ~ as @a[distance=64..] run scoreboard players add @s poisonAmp 1
+execute positioned ~ ~ ~ as @a[distance=80..] run scoreboard players add @s poisonAmp 1
+execute positioned ~ ~ ~ as @a[distance=96..] run scoreboard players add @s poisonAmp 1
+execute positioned ~ ~ ~ as @a[distance=112..] run scoreboard players add @s poisonAmp 1
+execute positioned ~ ~ ~ as @a[distance=128..] run scoreboard players add @s poisonAmp 1
 scoreboard players set @a[gamemode=spectator] poisonAmp 0
 execute as @a run scoreboard players operation @s poisonActual = @s poisonAmp
 
