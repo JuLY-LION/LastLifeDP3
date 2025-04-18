@@ -44,6 +44,7 @@ scoreboard objectives add wearingChainHelmet dummy
 scoreboard objectives add wearingChainChestP dummy
 scoreboard objectives add wearingChainLeggings dummy
 scoreboard objectives add wearingChainBoots dummy
+scoreboard objectives add hasBeenDmgd minecraft.custom:minecraft.damage_taken
 
 kill @e[name="SafeZoneCenter"]
 summon marker 50.5 72.0 50.5 {NoGravity:1b,CustomNameVisible:1b,CustomName:'"SafeZoneCenter"'}

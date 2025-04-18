@@ -40,3 +40,6 @@ execute as @a[scores={poisonAmp=3..}] at @s anchored eyes run particle minecraft
 execute as @a[scores={poisonAmp=5..}] at @s anchored eyes run particle minecraft:falling_dust{block_state:{Name:"green_concrete"}} ^ ^ ^3 8 8 8 0 10 normal @s
 
 function compressediron:hub_ciron
+
+effect give @a[scores={hasBeenDmgd=1..,punishmentID=8}] minecraft:levitation 2 0 false
+scoreboard players set @a[scores={hasBeenDmgd=1..}] hasBeenDmgd 0
