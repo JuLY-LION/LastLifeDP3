@@ -2,7 +2,8 @@
 # Hub function for poison-border related commands
 
 execute as @a run scoreboard players operation @s poisonAmpPrev = @s poisonAmp
-scoreboard players set @a poisonAmp 0
+execute in minecraft:overworld run scoreboard players set @a[distance=1..10000] poisonAmp 0
+execute in minecraft:the_nether run scoreboard players set @a[distance=1..10000] poisonAmp 0
 execute positioned ~ ~ ~ as @a[distance=56..] run scoreboard players add @s poisonAmp 1
 execute positioned ~ ~ ~ as @a[distance=64..] run scoreboard players add @s poisonAmp 1
 execute positioned ~ ~ ~ as @a[distance=80..] run scoreboard players add @s poisonAmp 1
